@@ -1,0 +1,68 @@
+body {
+	background-image: url(nfl.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	color: white;
+}
+
+.square {
+	border-bottom: 10px solid GreenYellow;
+	height: 80px;
+	border-radius: px;
+	background-color: LimeGreen;
+	opacity: 0.85;
+	font-size: 3em;
+	text-align: center;
+}
+
+.square:hover {
+	border-bottom: 10px solid black;
+	}
+
+.game-container {
+	margin-bottom: 20px;
+}
+
+.player-one {
+	background-color: DodgerBlue;
+	opacity: 0.9;
+}
+
+.player-two {
+	background-color: Tomato;
+	opacity: 0.9;
+}
+
+.overlap {
+	background-color: SkyBlue;
+	opacity: 0.9;
+}
+
+#football {
+	width: 60%;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+#twenty-five {
+	background-color: steelblue;
+	opacity: 0.75;
+}
+
+.endZone {
+	margin-top: 10px;
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+p.kickoff {
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 27px;
+}
+

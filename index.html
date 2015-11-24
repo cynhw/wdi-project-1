@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Board Game</title>
+
+<!-- All the CSS code goes here -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+<link rel="stylesheet" type="style/css" href="style.css">
+
+</head>
+<body>
+
+
+
+<div class="container">
+
+<div class="row">
+	<div class="col-md-5 col-md-offset-5">
+	<header><h1>Board Game.</h1></header>
+		<p class="lead" id="playerRollTurn"> </p>
+	</div>
+	
+	<div class="col-md-2 pull-right" id="rollTheDice"><img id="football" src="football.png">
+	</div>
+
+</div>
+
+
+</div>
+
+<!-- Game: Main Board -->
+
+
+<!-- Row 1 of Div's aka Boxes -->
+
+<section class="game-container">	
+	<div class="row">
+		<div class="col-xs-1 col-xs-offset-2 col-sm-1 col-sm-offset-2 square player-one player-two overlap kickoff" value="0" id="zero"><p class="kickoff">Kick Off.</p></div>
+		<div class="col-xs-1 col-sm-1 square" value="1" id="one"></div>
+		<div class="col-xs-1 col-sm-1 square" value="2" id="two"></div>
+		<div class="col-xs-1 col-sm-1 square" value="3" id="three"></div>
+		<div class="col-xs-1 col-sm-1 square" value="4" id="four"></div>
+		<div class="col-xs-1 col-sm-1 square" value="5" id="five"></div>
+		<div class="col-xs-1 col-sm-1 square" value="6" id="six"></div>
+		<div class="col-xs-1 col-sm-1 square" value="7" id="seven"></div>
+
+	</div>
+	
+	<div class="row">
+		<div class="col-xs-1 col-xs-offset-9 col-sm-1 col-sm-offset-9 square" value="8" id="eight"></div>
+	</div>
+	
+	<div class="row">
+		<div class="col-xs-1 col-xs-offset-2 col-sm-1 col-sm-offset-2 square" value="16" id="sixteen"></div>
+		<div class="col-xs-1 col-sm-1 square" value="15" id="fifteen"></div>
+		<div class="col-xs-1 col-sm-1 square" value="14" id="fourteen"></div>
+		<div class="col-xs-1 col-sm-1 square" value="13" id="thirteen"></div>
+		<div class="col-xs-1 col-sm-1 square" value="12" id="twelve"></div>
+		<div class="col-xs-1 col-sm-1 square" value="11" id="eleven"></div>
+		<div class="col-xs-1 col-sm-1 square" value="10" id="ten"></div>
+		<div class="col-xs-1 col-sm-1 square" value="9" id="nine"></div>
+
+	
+	</div>
+
+	<div class="row">
+		<div class="col-xs-1 col-xs-offset-2 col-sm-1 col-sm-offset-2 square" value="17" id="seventeen"></div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-1 col-xs-offset-2 col-sm-1 col-sm-offset-2 square" value="18" id="eighteen"></div>
+		<div class="col-xs-1 col-sm-1 square" value="19" id="nineteen"></div>
+		<div class="col-xs-1 col-sm-1 square" value="20" id="twenty"></div>
+		<div class="col-xs-1 col-sm-1 square" value="21" id="twenty-one"></div>
+		<div class="col-xs-1 col-sm-1 square" value="22" id="twenty-two"></div>
+		<div class="col-xs-1 col-sm-1 square" value="23" id="twenty-three"></div>
+		<div class="col-xs-1 col-sm-1 square" value="24" id="twenty-four"></div>
+		<div class="col-xs-1 col-sm-1 square text-center" value="25" id="twenty-five"><p class="endZone">End Zone.</p></div>
+
+	</div>
+
+</section>
+
+<!-- Row 2 of Div's aka Boxes -->
+
+<!-- JavaScript codes and scripts run down here -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<srcipt src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></srcipt>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script src="script.js"></script>
+
+<script src="bootbox.min.js"></script>
+	
+
+</body>
+</html>
