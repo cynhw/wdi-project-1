@@ -1,36 +1,106 @@
+/* *******************************
+general styling for the page */
+
 body {
-	background-image: url(nfl.png);
+	background-image: url('img/twelve.png');
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: top;
 	background-attachment: fixed;
 	color: white;
+	font-family: 'karla', sans-serif;;
+	font-size: 14px;
 }
 
+#intro {
+	margin-top: 100px;
+}
+
+a:link {
+	color: #95d9ff;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #95d9ff;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #8f75ad;
+	background-color: #8f75ad;
+	text-decoration: none;
+}
+
+h1 {
+	font-family: 'Elephant', serif;
+}
+
+#loadGame {
+	background-color: transparent;
+	padding: 20px;
+}
+
+.intro-text {
+	background-color: #3c486b;
+	padding: 20px;
+	opacity: 0.7;
+	border-radius: 15px;
+	font-size: 14px;
+}
+
+.btn-default {
+	background-color: transparent;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 1px solid white;
+	border-radius: 0px;
+	color: white;
+	font-size: 20px;
+}
+
+.btn-default:hover {
+	background-color: transparent;
+	color: #8ed8ff;
+	border-bottom: 1px solid white;
+}
+
+
+
+/* *******************************
+styling for the grid and squares */
+
 .square {
-	border-bottom: 10px solid GreenYellow;
+	border-bottom: 3px solid white;
 	height: 80px;
-	border-radius: px;
-	background-color: LimeGreen;
-	opacity: 0.85;
+	border-radius: 0px;
+	background-color: ;
+	opacity: 0.8;
 	font-size: 3em;
 	text-align: center;
 }
 
 .square:hover {
-	border-bottom: 10px solid black;
+	border: 1px solid white;
+	border-bottom: 3px solid white;
 	}
 
 .game-container {
 	margin-bottom: 20px;
 }
 
+/* *****************************************
+player one and player two moves indicators */
+
 .player-one {
-	background-color: DodgerBlue;
+	background-color: #224989;
 	opacity: 0.9;
 }
 
 .player-two {
-	background-color: Tomato;
+	background-color: #51217d;
 	opacity: 0.9;
 }
 
@@ -39,30 +109,57 @@ body {
 	opacity: 0.9;
 }
 
+/****************************************************
+styling for interactions with javascript and players*/
+
 #football {
-	width: 60%;
+	width: 30px;
+	margin-bottom: 20px;
+	margin-left: 30px;
 	margin-top: 20px;
-	margin-left: 50px;
 }
 
 #twenty-five {
-	background-color: steelblue;
-	opacity: 0.75;
+	background-color: transparent;
+	opacity: 1;
 }
 
 .endZone {
-	margin-top: 10px;
-	color: black;
-	font-size: 18px;
+	margin-top: 30px;
+	color: white;
+	font-size: 14px;
 	font-weight: bold;
 }
 
 
 p.kickoff {
-	color: black;
-	font-size: 18px;
+	color: white;
+	font-size: 14px;
 	font-weight: bold;
 	text-align: center;
 	margin-top: 27px;
+}
+
+.kickoff {
+	background-color: transparent;
+}
+
+#playerOneBounce, #playerTwoBounce {
+	margin-top: 30px;
+	text-align: center;
+	font-size: 12px;
+}
+
+/* ******************************* 
+styling the bonus and penalities for the game baord */
+
+.bonus {
+	width: 52%;
+	margin-top: 5px;
+
+}
+
+.penalty {
+	margin-top: 8px;
 }
 

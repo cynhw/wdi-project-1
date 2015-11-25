@@ -8,43 +8,84 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
+<link href='https://fonts.googleapis.com/css?family=Press+Start+2P|Montserrat+Alternates:400,700' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="style/css" href="sweetalert.css">
 <link rel="stylesheet" type="style/css" href="style.css">
 
 </head>
 <body>
 
 
+	<div class="row">
+		<div class="col-lg-6 col-lg-offset-3 text-center">
+			<h1>touchdown.</h1>
+			<h4>a board game for football fans.</h4>
+		</div>
 
-<div class="container">
+<section class="introduction" id="intro">
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4 text-center intro-text">
+			<p>Built with HTML/CSS, jQuery, JavaScript and Bootstrap.</p>
+			<p>The board game was inspired by my avid fandom with the Ravens and Seahawks. Knowing that the Ravens don't stand a chance in making a playoffs, I have created this game as an alternative reality to make a girl's dream come true. Not really. I was more inspired to make a board game that's a little different out there. </p>
 
-<div class="row">
-	<div class="col-md-5 col-md-offset-5">
-	<header><h1>Board Game.</h1></header>
-		<p class="lead" id="playerRollTurn"> </p>
+			<p>Icons used are from <a href="https://www.iconfinder.com">here</a>
+			<br>The background image is from <a href="http://q13fox.com/2015/01/19/seahawks-12th-man-flag-tattered-but-flying-over-space-needle/">here</a></p>
+			<p>&hearts;</p>
+		
+
+	<div class="row">
+		<div class="col-lg-4 col-lg-offset-4 text-center" id="loadGameInstruction">
+			<button class="btn btn-default" type="submit">go to game</button>
+		</div>
 	</div>
-	
-	<div class="col-md-2 pull-right" id="rollTheDice"><img id="football" src="football.png">
 	</div>
+	</div>
+</section>
 
-</div>
+<section class="instructions" id="instructionBox" hidden>
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4 text-center intro-text">
+			<p>The football is the dice of this board game. Click to start rolling. The Seahawks is blue and the Ravens is purple.</p>
+			<p>On each line you will see either a football or a whistle. The football represents a bonus! If you roll over those squares, it will instruct you to move forward. On the other hand, if you hit a whistle, you might be instructed to move backwards due to a penalty called upon your time.</p>
+			<p>This game is solely a small project I did for the Web Development Immersive at General Assembly. </p>
+			<p>Have fun and go hawks!</p>
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-4 text-center" id="loadGame">
+					<button class="btn btn-default" type="submit">play</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
 
 
-</div>
+<section class="game-container" id="game" hidden>	
+<div class="container" id="title">
+	<div class="row">
+		<div class="row">
+			<div class="col-sm-3 col-sm-offset-2"><button class="btn btn-default" type="submit" id="instructions">instructions</button></div>
+			
+			<div class="col-sm-3" id="rollTheDice"><img id="football" src="img/football_roll.png"><span id="span">  bounce the football to roll.</span></div>
+			
+			<div class="col-sm-3 col-sm-offset-1"><button class="btn btn-default" type="submit" id="home">home</button></div>
+			<!-- <p class="col-sm-2 col-sm-offset-3" id="playerTwoBounce"></p> -->
+		</div>
+		</div>
 
 <!-- Game: Main Board -->
 
-
 <!-- Row 1 of Div's aka Boxes -->
 
-<section class="game-container">	
+
 	<div class="row">
-		<div class="col-xs-1 col-xs-offset-2 col-sm-1 col-sm-offset-2 square player-one player-two overlap kickoff" value="0" id="zero"><p class="kickoff">Kick Off.</p></div>
-		<div class="col-xs-1 col-sm-1 square" value="1" id="one"></div>
+		<div class="col-xs-1 col-xs-offset-2 col-sm-1 col-sm-offset-2 square player-one player-two overlap kickoff" value="0" id="zero"><p class="kickoff">START</p></div>
+		<div class="col-xs-1 col-sm-1 square" value="1" id="one"><img src="img/whistle.png" class="penalty"></div>
 		<div class="col-xs-1 col-sm-1 square" value="2" id="two"></div>
 		<div class="col-xs-1 col-sm-1 square" value="3" id="three"></div>
 		<div class="col-xs-1 col-sm-1 square" value="4" id="four"></div>
 		<div class="col-xs-1 col-sm-1 square" value="5" id="five"></div>
-		<div class="col-xs-1 col-sm-1 square" value="6" id="six"></div>
+		<div class="col-xs-1 col-sm-1 square" value="6" id="six"><img src="img/football-bonus.png" class="bonus"></div>
 		<div class="col-xs-1 col-sm-1 square" value="7" id="seven"></div>
 
 	</div>
@@ -55,11 +96,11 @@
 	
 	<div class="row">
 		<div class="col-xs-1 col-xs-offset-2 col-sm-1 col-sm-offset-2 square" value="16" id="sixteen"></div>
-		<div class="col-xs-1 col-sm-1 square" value="15" id="fifteen"></div>
+		<div class="col-xs-1 col-sm-1 square" value="15" id="fifteen"><img src="img/football-bonus.png" class="bonus"></div>
 		<div class="col-xs-1 col-sm-1 square" value="14" id="fourteen"></div>
-		<div class="col-xs-1 col-sm-1 square" value="13" id="thirteen"></div>
+		<div class="col-xs-1 col-sm-1 square" value="13" id="thirteen"><img src="img/football-bonus.png" class="bonus"></div>
 		<div class="col-xs-1 col-sm-1 square" value="12" id="twelve"></div>
-		<div class="col-xs-1 col-sm-1 square" value="11" id="eleven"></div>
+		<div class="col-xs-1 col-sm-1 square" value="11" id="eleven"><img src="img/whistle.png" class="penalty"></div>
 		<div class="col-xs-1 col-sm-1 square" value="10" id="ten"></div>
 		<div class="col-xs-1 col-sm-1 square" value="9" id="nine"></div>
 
@@ -72,13 +113,13 @@
 
 	<div class="row">
 		<div class="col-xs-1 col-xs-offset-2 col-sm-1 col-sm-offset-2 square" value="18" id="eighteen"></div>
-		<div class="col-xs-1 col-sm-1 square" value="19" id="nineteen"></div>
-		<div class="col-xs-1 col-sm-1 square" value="20" id="twenty"></div>
+		<div class="col-xs-1 col-sm-1 square" value="19" id="nineteen"><img src="img/football-bonus.png" class="bonus"></div>
+		<div class="col-xs-1 col-sm-1 square" value="20" id="twenty"><img src="img/whistle.png" class="penalty"></div>
 		<div class="col-xs-1 col-sm-1 square" value="21" id="twenty-one"></div>
-		<div class="col-xs-1 col-sm-1 square" value="22" id="twenty-two"></div>
+		<div class="col-xs-1 col-sm-1 square" value="22" id="twenty-two"><img src="img/whistle.png" class="penalty"></div>
 		<div class="col-xs-1 col-sm-1 square" value="23" id="twenty-three"></div>
-		<div class="col-xs-1 col-sm-1 square" value="24" id="twenty-four"></div>
-		<div class="col-xs-1 col-sm-1 square text-center" value="25" id="twenty-five"><p class="endZone">End Zone.</p></div>
+		<div class="col-xs-1 col-sm-1 square" value="24" id="twenty-four"><img src="img/football-bonus.png" class="bonus"></div>
+		<div class="col-xs-1 col-sm-1 square text-center" value="25" id="twenty-five"><p class="endZone">GOAL.</p></div>
 
 	</div>
 
@@ -88,15 +129,15 @@
 
 <!-- JavaScript codes and scripts run down here -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 
-<srcipt src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></srcipt>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 <script src="script.js"></script>
 
-<script src="bootbox.min.js"></script>
+<script src="sweetalert.min.js"></script>
 	
 
 </body>
