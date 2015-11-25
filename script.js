@@ -548,8 +548,8 @@ var playerMove = function (rollNumber) {
 			function(){
 				penalty = 0;
 				playerOne = playerOne - penalty;
-				$('.player-two').removeClass('player-two');
-				$('.player-one').removeClass('player-one');
+				// $('.player-two').removeClass('player-two');
+				// $('.player-one').removeClass('player-one');
 				$('.square[value=' + playerOne + ']').addClass('player-two');
 			}
 		);
@@ -625,3 +625,9 @@ $("#home").on("click", function() {
         clickCount = 0;
     });
 
+$("#replay").on("click", function() {
+        $("#game").fadeOut(500);
+        $("#game").delay(550).fadeIn(500);
+        $('#span').delay(550).fadeIn(500);
+        clickCount = 0;
+    });
