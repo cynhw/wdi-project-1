@@ -170,7 +170,7 @@ var playerMove = function (rollNumber) {
 		//$('#playerOneBounce').html("Wilson to Graham 32-yard pass complete. " + (rollNumber + 3) + " yards.");
 		$('.square[value=' + playerOne + ']').addClass('player-one');
 		swal({   
-			title: "32-yeard gain!",   
+			title: "32-yard gain!",   
 			text: "It's no wonder Graham became a Seahawks.",   
 			imageUrl: "img/td_seahawks.png",
 			imageSize: '150x150',
@@ -439,7 +439,7 @@ var playerMove = function (rollNumber) {
 		swal({   
 			title: "False Start.",   
 			text: "Somebody got way too excited.",   
-			imageUrl: "img/penalty_seahawks.png",
+			imageUrl: "img/penalty_ravens.png",
 			imageSize: '200x200',
 			},
 			function(){
@@ -626,8 +626,10 @@ $("#home").on("click", function() {
     });
 
 $("#replay").on("click", function() {
-        $("#game").fadeOut(500);
-        $("#game").delay(550).fadeIn(500);
-        $('#span').delay(550).fadeIn(500);
-        clickCount = 0;
+        rollCount = 0;
+        playerOne = 0;
+        playerTwo = 0;
+        $('.square').removeClass('player-one');
+		$('.square').removeClass('player-two');
+		$('.square').removeClass('overlap');
     });
