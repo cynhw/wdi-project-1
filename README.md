@@ -17,8 +17,7 @@ This game is solely a small project I did for the Web Development Immersive at G
 Have fun and go hawks!
 
 <b>Credits:</b>
-
-<br>Icons used are from <a href="https://www.iconfinder.com/">here</a>.
+Icons used are from <a href="https://www.iconfinder.com/">here</a>.
 <br>The background image is from <a href="http://q13fox.com/2015/01/19/seahawks-12th-man-flag-tattered-but-flying-over-space-needle/">here</a>.
 <br>Other images were found online and then edited by me with Photoshop.
 <br>Project was also inspired by other students that have taken or taking the WDI course.
