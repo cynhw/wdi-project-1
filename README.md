@@ -14,10 +14,12 @@ On each line you will see either a football or a whistle. The football represent
 
 This game is solely a small project I did for the Web Development Immersive at General Assembly.
 
-Have fun and go hawks!
+Have fun and go Hawks (and Ravens!) &hearts;
 
 <b>Credits:</b>
 Icons used are from <a href="https://www.iconfinder.com/">here</a>.
 <br>The background image is from <a href="http://q13fox.com/2015/01/19/seahawks-12th-man-flag-tattered-but-flying-over-space-needle/">here</a>.
 <br>Other images were found online and then edited by me with Photoshop.
 <br>Project was also inspired by other students that have taken or taking the WDI course.
+
+Big thanks to the instructors and TA for their efforts in helping me write the code for this game.
